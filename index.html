@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма обратной связи</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="contacts">
+		<div class="container">
+			<form action="#" id="mailForm" class="contact-form">
+				<h2>Обратная связь</h2><br>
+				<input id="name" type="text" placeholder="Имя" class="form-control" required><br>
+				<input id="email" type="email" placeholder="E-Mail" class="form-control" required><br>
+				<input id="phone" type="phone" placeholder="Телефон" class="form-control" required><br>
+				<textarea id="message" type='message' class="form-control" placeholder="Сообщение"></textarea><br>
+				<button id="sendMail" type="button" value="Отправить" class="btn btn-success contact-form__submit">Отправить</button>
+			</form>
+			<div id="errorMess"></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/formMail.js"></script>
+</body>
+</html>
